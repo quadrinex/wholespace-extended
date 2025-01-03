@@ -48,7 +48,7 @@
         {
           "type": "connection",
           "style": "diamond",
-          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}}\udb80\ude01{{ end }} {{ .Name }}",
+          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}}\udb80\ude01{{ end }} {{ .Name }} ",
           "background": "#8822ee",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2"
@@ -101,6 +101,19 @@
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "trailing_diamond": "\ue0b0",
           "type": "git"
+        },
+        {
+          "type": "spotify",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "leading_diamond": "\ue0b2",
+          "foreground": "#ffffff",
+          "background": "#1BD760",
+          "properties": {
+            "playing_icon": " ",
+            "paused_icon": "󰏤 ",
+            "stopped_icon": " "
+          }
         }
       ],
       "type": "prompt"
@@ -137,13 +150,12 @@
           "background": "#104ec2",
           "foreground": "#000000",
           "properties": {
-            "display_host": true
           },
           "style": "diamond",
           "leading_diamond": "",
           "trailing_diamond": "\ue0b0",
-          "template": "{{ .Shell }} ",
-          "type": "session"
+          "template": "{{ .Name }}",
+          "type": "shell"
         },
         {
           "background": "#ffafd2",
