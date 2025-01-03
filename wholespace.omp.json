@@ -130,8 +130,20 @@
           },
           "style": "diamond",
           "leading_diamond": "",
+          "trailing_diamond": "\ue0bc",
+          "template": "{{ .HostName }}{{ if .SSHSession }} \ueba9{{ end }}",
+          "type": "session"
+        },
+        {
+          "background": "#104ec2",
+          "foreground": "#000000",
+          "properties": {
+            "display_host": true
+          },
+          "style": "diamond",
+          "leading_diamond": "",
           "trailing_diamond": "\ue0b0",
-          "template": "{{ .HostName }}{{ if .SSHSession }} \ueba9{{ end }} ",
+          "template": "{{ .Shell }} ",
           "type": "session"
         },
         {
@@ -157,12 +169,6 @@
           "style": "plain",
           "template": " >> ",
           "type": "status"
-        },
-        {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#E06C75",
-          "template": "{{ .Shell }} // {{ .Env.VarName }} // {{ .Shell }}"
         }
       ],
       "type": "prompt"
