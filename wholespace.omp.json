@@ -14,7 +14,7 @@
             "windows": "\ue62a "
           },
           "style": "diamond",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
+          "template": " {{ if .WSL }}\ue62aWSL > {{ end }}{{.Icon}}",
           "trailing_diamond": "<transparent,#FEF5ED>\ue0b2</>",
           "type": "os"
         },
