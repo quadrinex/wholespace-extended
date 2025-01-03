@@ -71,6 +71,7 @@
     },
     {
       "alignment": "right",
+      "overflow": "hide",
       "segments": [
         {
           "background": "#ffffff",
@@ -136,7 +137,7 @@
         },
         {
           "background": "#008cff",
-          "foreground": "#000000",
+          "foreground": "#ffffff",
           "properties": {
             "display_host": true
           },
@@ -148,7 +149,7 @@
         },
         {
           "background": "#104ec2",
-          "foreground": "#000000",
+          "foreground": "#ffffff",
           "properties": {
           },
           "style": "diamond",
