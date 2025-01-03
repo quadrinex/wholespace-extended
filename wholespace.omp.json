@@ -157,6 +157,12 @@
           "style": "plain",
           "template": " >> ",
           "type": "status"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#E06C75",
+          "template": ".Shell // .Env.VarName // .Shell"
         }
       ],
       "type": "prompt"
