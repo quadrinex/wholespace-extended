@@ -106,7 +106,7 @@
           "type": "spotify",
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
-          "leading_diamond": "\ue0b2",
+          "leading_diamond": "\ue0d7",
           "foreground": "#ffffff",
           "background": "#1BD760",
           "properties": {
