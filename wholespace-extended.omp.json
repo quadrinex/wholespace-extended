@@ -131,7 +131,7 @@
           "style": "diamond",
           "leading_diamond": "",
           "trailing_diamond": "\ue0bc",
-          "template": "{{ .HostName }}{{ if .SSHSession }} \ueba9{{ end }} ",
+          "template": "{{ .HostName }}{{ if .SSHSession }} \ueba9  {{ end }}",
           "type": "session"
         },
         {
