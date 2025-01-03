@@ -167,7 +167,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": " >> ",
+          "template": " >{{ .String }}> ",
           "type": "status"
         }
       ],
