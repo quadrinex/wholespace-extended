@@ -23,10 +23,10 @@
           "foreground": "#011627",
           "leading_diamond": "\ue0b2",
           "properties": {
-            "time_format": "15:04:05"
+            "time_format": "02 Jan 2006 \u2665 15:04:05"
           },
           "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+          "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "<transparent,#FEF5ED>\ue0b2</>",
           "type": "time"
         },
