@@ -57,7 +57,7 @@
         {
           "background": "#575656",
           "foreground": "#d6deeb",
-          "leading_diamond": "\ue0b2",
+          "leading_diamond": " \ue0b2",
           "properties": {
             "style": "roundrock",
             "threshold": 0
