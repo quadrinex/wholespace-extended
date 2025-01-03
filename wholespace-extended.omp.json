@@ -48,21 +48,20 @@
         {
           "type": "connection",
           "style": "diamond",
-          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}}\udb80\ude01{{ end }} {{ .Name }} ",
+          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}}\udb80\ude01{{ end }} {{ .Name }}",
           "background": "#8822ee",
           "foreground": "#222222",
-          "leading_diamond": "\ue0b2",
-          "trailing_diamond": "<transparent,#8822ee>\ue0b2</>"
+          "leading_diamond": "\ue0b2"
         },
         {
           "background": "#575656",
           "foreground": "#d6deeb",
-          "leading_diamond": " \ue0b2",
+          "leading_diamond": "\ue0b2",
           "properties": {
             "style": "roundrock",
             "threshold": 0
           },
-          "style": "diamond",
+          "style": "diamond", 
           "template": " {{ .FormattedMs }} ",
           "trailing_diamond": "\ue0b0",
           "type": "executiontime"
