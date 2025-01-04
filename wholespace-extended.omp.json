@@ -155,7 +155,7 @@
           "style": "diamond",
           "leading_diamond": "",
           "trailing_diamond": "\ue0b0",
-          "template": "{{ .Name }}",
+          "template": "{{ .Name }} ({{ .SHLVL }})",
           "type": "shell"
         },
         {
