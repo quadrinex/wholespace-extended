@@ -84,7 +84,7 @@
           },
           "style": "diamond",
           "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
-          "trailing_diamond": "<transparent,#ffffff>\ue0b2</>",
+          "trailing_diamond": "<transparent,#ffffff>\ue0b2</> ",
           "type": "node"
         },
         {
@@ -100,13 +100,13 @@
           },
           "style": "diamond",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          "trailing_diamond": "\ue0b0",
+          "trailing_diamond": "\ue0b0 ",
           "type": "git"
         },
         {
           "type": "spotify",
           "style": "diamond",
-          "trailing_diamond": "\ue0b0",
+          "trailing_diamond": "\ue0b0 ",
           "leading_diamond": "\ue0d7",
           "foreground": "#ffffff",
           "background": "#1BD760",
