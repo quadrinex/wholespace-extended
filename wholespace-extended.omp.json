@@ -83,7 +83,7 @@
             "yarn_icon": " <#348cba>\ue6a7</>"
           },
           "style": "diamond",
-          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "trailing_diamond": "<transparent,#ffffff>\ue0b2</> ",
           "type": "node"
         },
