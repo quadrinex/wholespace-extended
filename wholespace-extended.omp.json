@@ -35,20 +35,20 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
-          "template": "\ue266 CPU: {{ round .PhysicalPercentUsed .Precision }}% | ",
+          "template": " \ue266  CPU: {{ round .PhysicalPercentUsed .Precision }}% | ",
           "type": "sysinfo"
         },
         {
           "background": "#516BEB",
           "foreground": "#ffffff",
           "style": "diamond",
-          "template": "\ue266 RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
+          "template": " \ue266  RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
           "type": "sysinfo"
         },
         {
           "type": "connection",
           "style": "diamond",
-          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}}\udb80\ude01{{ end }} {{ .Name }} ",
+          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}} \uef44 {{ end }} {{ .Name }} ",
           "background": "#8822ee",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2"
