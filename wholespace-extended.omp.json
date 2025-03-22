@@ -48,7 +48,7 @@
         {
           "type": "connection",
           "style": "diamond",
-          "template": "{{ if eq .Type \"wifi\"}}\uf1eb{{ else if eq .Type \"ethernet\"}} \uef44 {{ end }} {{ .Name }} ",
+          "template": "{{ if eq .Type \"wifi\"}}\uf1eb {{ .Name }} {{ end }}",
           "background": "#8822ee",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2"
