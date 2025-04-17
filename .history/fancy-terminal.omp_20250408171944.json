@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "template": "\u256d"
+        },
+        {
+          "style": "plain",
+          "template": " {{ if .WSL }}WSL > {{ end }}{{.Icon}}",
+          "type": "os",
+          "foreground": "lightBlue"
+        },
+        {
+          "type": "shell",
+          "style": "plain",
+          "foreground": "lightBlue"
+        },
+        {
+          "type": "sysinfo",
+          "style": "plain",
+          "template": " {{ round .PhysicalPercentUsed .Precision }}% ",
+          "foreground": "#07e6b5"
+        },
+        {
+          "type": "connection",
+          "style": "plain",
+          "template": "{{ if eq .Type \"wifi\"}}\uf1eb {{ .Name }} {{ end }}",
+          "foreground": "#bd9b73"
+        },
+        {
+          "properties": {
+            "style": "austin",
+            "always_enabled": true
+          },
+          "style": "plain", 
+          "template": "{{ .FormattedMs }} ",
+          "type": "executiontime",
+          "foreground": "#e5e6b6"
+        },
+        {
+          "foreground": "#003800",
+          "properties": {
+            "fetch_package_manager": true
+          },
+          "style": "plain",
+          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+        },
+        {
+          "foreground": "#5d00a8",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          },
+          "style": "plain",
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "type": "spotify",
+          "style": "plain",
+          "foreground": "#1BD760",
+          "properties": {
+            "playing_icon": " ",
+            "paused_icon": "󰏤 ",
+            "stopped_icon": " "
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FFFFFF",
+          "template": "\u2570 "
+        },
+        {
+          "type": "session",
+          "template": "{{ if .Root }}\ued25 {{ end }}{{ .UserName }}@{{ .HostName }}{{ if .SSHSession }} {{ end }} ",
+          "style": "plain",
+          "foreground": "#FFFFFF"
+        },
+        {
+          "foreground": "#ffafd2",
+          "properties": {
+            "style": "agnoster"
+          },
+          "style": "plain",
+          "template": " {{ .Path }}",
+          "type": "path"
+        }
+      ]
+    }
+  ],
+  "console_title_template": "{{ .Folder }}",
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#FEF5ED",
+    "template": "\ue285 "
+  },
+  "version": 3
+}
