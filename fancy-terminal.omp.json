@@ -13,7 +13,7 @@
         },
         {
           "style": "plain",
-          "template": " {{ if .WSL }}WSL>{{ end }}{{.Icon}} ",
+          "template": " {{ if .WSL }} {{ end }}{{.Icon}} ",
           "type": "os",
           "foreground": "lightBlue"
         },
@@ -26,7 +26,7 @@
         {
           "type": "sysinfo",
           "style": "plain",
-          "template": " {{ round .PhysicalPercentUsed .Precision }}%({{.PhysicalTotalMemory}}) ",
+          "template": " {{ round .PhysicalPercentUsed .Precision }}% ",
           "foreground": "#07e6b5"
         },
         {
